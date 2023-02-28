@@ -40,5 +40,5 @@ def echo_all(message):
         bot.reply_to(message, f"{text}")
     else:
         bot.reply_to(message, f"Создатель меня еще не научил отвечать на '{message.text}'")
-
-bot.polling()
+if __name__ == '__main__':
+    bot.infinity_polling()
